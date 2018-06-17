@@ -1,0 +1,1 @@
+docker image build --tag geth:1.8 .
