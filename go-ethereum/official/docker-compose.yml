@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  geth:
+    image: ethereum/client-go:v1.8.11
+    command: '--dev --networkid 1234 --rpc --rpcaddr 0.0.0.0 --rpcapi "web3,eth,net,personal,admin"'
+    ports:
+      - "8545:8545"
+      - "8546:8546"
+      - "30303:30303"
+      - "30303:30303/udp"
