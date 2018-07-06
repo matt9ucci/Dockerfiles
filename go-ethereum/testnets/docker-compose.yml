@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ropsten:
+    image: ethereum/client-go:release-1.8
+    command: "--testnet"
+    ports:
+      - 30303
+  rinkeby:
+    image: ethereum/client-go:release-1.8
+    command: "--rinkeby"
+    ports:
+      - 30303
