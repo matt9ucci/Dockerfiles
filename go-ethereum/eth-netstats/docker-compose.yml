@@ -1,0 +1,13 @@
+version: "3"
+services:
+  eth-netstats:
+    build: .
+    environment:
+      WS_SECRET: netstats_secret
+    ports:
+      - "3000:3000"
+  ropsten:
+    image: ethereum/client-go:release-1.8
+    command: "--testnet --light --ethstats my-ropsten:netstats_secret@eth-netstats:3000"
+    ports:
+      - 30303
