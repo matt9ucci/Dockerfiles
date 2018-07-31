@@ -1,0 +1,8 @@
+version: '3'
+services:
+  geth:
+    build: .
+    command: "--networkid 1337 --rpc --rpcaddr 0.0.0.0 --rpccorsdomain '*'"
+    ports:
+     - "8545:8545"
+     - "30303:30303"
