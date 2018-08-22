@@ -1,12 +1,12 @@
 version: "3"
 services:
   db:
-    image: postgres:10.4-alpine
+    image: postgres:10
     ports:
       - "5432:5432"
     environment:
       POSTGRES_PASSWORD: password
   adminer:
-    image: adminer:4.6-standalone
+    image: adminer:4
     ports:
       - "8080:8080"
