@@ -1,1 +1,1 @@
-docker image build --tag geth:1.8 .
+docker image build --tag geth:1.8 --no-cache .
